@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { API_URL } from "../../config";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import axios from "axios";
 
 const ListPatients = () => {
   const [patients, setPatients] = useState([]);
+  const history = useHistory();
 
   useEffect(() => {
     fetch(`${API_URL}/all`)
@@ -12,6 +14,10 @@ const ListPatients = () => {
         setPatients(data);
       });
   }, []);
+
+  const handlePatientEdit = (id) => {
+    history.push(`/edit/${id}`);
+  };
 
   return (
     <>
@@ -54,9 +60,7 @@ const ListPatients = () => {
                   <button
                     className="btn btn-danger"
                     onClick={() => {
-                      
-                        console.log("delete");
-                    
+                      console.log("delete");
                     }}
                   >
                     Delete
@@ -65,10 +69,9 @@ const ListPatients = () => {
                 <td>
                   <button
                     className="btn btn-primary"
+                    //navigate to edit page
                     onClick={() => {
-                      
-                        console.log("update");
-                      
+                      handlePatientEdit(patient.patientIdentifier);
                     }}
                   >
                     Update
@@ -78,9 +81,7 @@ const ListPatients = () => {
                   <button
                     className="btn btn-success"
                     onClick={() => {
-                      
-                        console.log("print");
-                      
+                      console.log("print");
                     }}
                   >
                     Print
