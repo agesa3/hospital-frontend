@@ -15,6 +15,7 @@ const SearchPatient = () => {
   const handleChange = (e) => {
     setSearchValue({ ...searchValue, [e.target.name]: e.target.value });
   };
+  
 
   const handleSearchPatient = (e) => {
     e.preventDefault();
