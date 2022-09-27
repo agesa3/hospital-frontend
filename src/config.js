@@ -1,0 +1,2 @@
+//API URL ENDPOINT
+export const API_URL = 'http://localhost:8080/patients';

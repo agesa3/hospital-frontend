@@ -1,11 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from "react-router-dom";
+import Header from "./components/Header/Header";
+import ListPatients from "./components/List/ListPatients";
 
 function App() {
   return (
-    <div className="App">
-    
-    </div>
+    <>
+      <Header />
+      <Switch>
+        <Route path="/" exact component={ListPatients} />
+        {/* <Route path="/add" exact component={AddPatient} />
+      <Route path="/edit/:id" exact component={EditPatient} />
+      <Route path="/view/:id" exact component={ViewPatient} /> */}
+      </Switch>
+    </>
   );
 }
 
