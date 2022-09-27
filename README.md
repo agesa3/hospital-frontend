@@ -17,7 +17,9 @@ To access the site,here are some useful links.
 Here is a video demo for the site.
 [![Hospital Website](https://github.com/agesa3/hospital-frontend/blob/main/demo%20recording.mkv)](https://github.com/agesa3/hospital-frontend/blob/main/demo%20recording.mkv)
 
+Here are some screenshots
 
+<img src="https://github.com/agesa3/hospital-frontend/blob/main/demo/Screenshot%20from%202022-09-27%2020-47-04.png" width="400"/> <img src="https://github.com/agesa3/hospital-frontend/blob/main/demo/Screenshot%20from%202022-09-27%2020-47-08.png" width="400"/> <img src="https://github.com/agesa3/hospital-frontend/blob/main/demo/Screenshot%20from%202022-09-27%2020-47-12.png" width="400"/>  <img src="https://github.com/agesa3/hospital-frontend/blob/main/demo/Screenshot%20from%202022-09-27%2020-47-32.png" width="400"/> 
 ## Available Scripts
 
 In the project directory, you can run:
