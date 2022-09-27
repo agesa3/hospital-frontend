@@ -96,6 +96,7 @@ const EditPatient = () => {
                       placeholder="Birth Certificate Number"
                       value={birthCertificate}
                       onChange={onChange}
+                      name="birthCertificate"
                     />
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="idNumber">
