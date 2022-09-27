@@ -81,7 +81,7 @@ const AddPatient = () => {
                   <Form.Group className="mb-3" controlId="birthCertNo">
                     <Form.Label>Birth Certificate Number</Form.Label>
                     <Form.Control
-                      type="number"
+                      type="text"
                       placeholder="Birth Certificate Number"
                       value={birthCertificate}
                       onChange={onChange}
