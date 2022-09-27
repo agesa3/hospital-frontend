@@ -29,7 +29,7 @@ const EditPatient = () => {
   const handleEdit = (e) => {
     e.preventDefault();
     axios
-      .put(`${API_URL}/${patient.patientIdentifier}`, patient)
+      .put(`${API_URL}/update/${patient.patientIdentifier}`, patient)
       .then((res) => {
         console.log(res);
       })
