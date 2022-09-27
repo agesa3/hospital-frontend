@@ -15,8 +15,7 @@ To access the site,here are some useful links.
 - The hoster application can be found here (https://hospital-frontend-s79d.vercel.app/).
 
 Here is a video demo for the site.
-<video>
-</video>
+[![Hospital Website](https://github.com/agesa3/hospital-frontend/blob/main/demo%20recording.mkv)](https://github.com/agesa3/hospital-frontend/blob/main/demo%20recording.mkv)
 
 
 ## Available Scripts
