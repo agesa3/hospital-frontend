@@ -15,6 +15,9 @@ const Header = () => {
             <Link to="/add">
               <Nav.Link href="/add">Add Patient</Nav.Link>
             </Link>
+            <Link to="/search">
+              <Nav.Link href="/add">Search Patient</Nav.Link>
+            </Link>
           </Nav>
         </Container>
       </Navbar>

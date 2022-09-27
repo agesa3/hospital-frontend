@@ -5,6 +5,7 @@ import AddPatient from "./components/AddPatient/AddPatient";
 import Footer from "./components/Footer/Footer";
 import EditPatient from "./components/AddPatient/EditPatient";
 import PatientReport from "./components/report/PatientReport";
+import SearchPatient from "./components/Search/SearchPatient";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/add" exact component={AddPatient} />
         <Route path="/edit/:id" exact component={EditPatient} />
         <Route path="/report/:id" exact component={PatientReport} />
+        <Route path="/search" exact component={SearchPatient} />
       </Switch>
       <Footer />
     </>
