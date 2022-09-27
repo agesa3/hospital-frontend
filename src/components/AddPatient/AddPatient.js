@@ -36,7 +36,7 @@ const AddPatient = () => {
     e.preventDefault();
     console.log(patient);
     axios
-      .post(`${API_URL}/save`, patient)
+      .post(`${API_URL}save`, patient)
       .then((res) => {
         console.log(res);
         //naviate to list
