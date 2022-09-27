@@ -4,6 +4,7 @@ import ListPatients from "./components/List/ListPatients";
 import AddPatient from "./components/AddPatient/AddPatient";
 import Footer from "./components/Footer/Footer";
 import EditPatient from "./components/AddPatient/EditPatient";
+import PatientReport from "./components/report/PatientReport";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route path="/" exact component={ListPatients} />
         <Route path="/add" exact component={AddPatient} />
         <Route path="/edit/:id" exact component={EditPatient} />
-        {/* <Route path="/view/:id" exact component={ViewPatient} /> */}
+        <Route path="/report/:id" exact component={PatientReport} />
       </Switch>
       <Footer />
     </>

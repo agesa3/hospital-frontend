@@ -2,7 +2,10 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Form, Button, Card } from "react-bootstrap";
 import { API_URL } from "../../config";
+import { useHistory } from "react-router-dom";
+
 const EditPatient = () => {
+  const history = useHistory();
   const [patient, setPatient] = useState({
     firstName: "",
     lastName: "",
@@ -23,24 +26,26 @@ const EditPatient = () => {
     dateOfBirth,
     gender,
   } = patient;
+
   const onChange = (e) => {
     setPatient({ ...patient, [e.target.name]: e.target.value });
   };
+
   const handleEdit = (e) => {
     e.preventDefault();
     axios
       .put(`${API_URL}/update/${patient.patientIdentifier}`, patient)
       .then((res) => {
         console.log(res);
+        history.push("/");
       })
       .catch((err) => {
         console.log(err);
       });
   };
-  //get id from url
+
   const id = window.location.pathname.split("/")[2];
-  console.log("The id is " + id);
-  //get patient by id
+
   useEffect(() => {
     axios
       .get(`${API_URL}/${id}`)

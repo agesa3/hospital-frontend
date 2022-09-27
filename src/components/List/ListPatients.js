@@ -81,7 +81,7 @@ const ListPatients = () => {
                   <button
                     className="btn btn-success"
                     onClick={() => {
-                      console.log("print");
+                      history.push(`/report/${patient.patientIdentifier}`);
                     }}
                   >
                     Print
